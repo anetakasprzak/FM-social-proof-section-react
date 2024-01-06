@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: auto;
+    padding: 82px 23px 90px 24px;
+  }
+}
+
+.background--top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 584px;
+  height: 362px;
+}
+
+@media screen and (max-width: 375px) {
+  .background--top {
+    width: auto;
+  }
+}
+
+.background--bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 71px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 327px;
+    flex-direction: column;
+    gap: 49px;
+  }
+}
+
+.section-top {
+  display: flex;
+  gap: 125px;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .section-top {
+    flex-direction: column;
+    gap: 39px;
+    text-align: center;
+  }
+}
+
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  flex: 0 0 445px;
+}
+
+@media screen and (max-width: 375px) {
+  .heading-box {
+    gap: 17px;
+    flex: 0 0 auto;
+  }
+}
+
+.heading {
+  font-size: 56px;
+  font-weight: 700;
+  max-width: 445px;
+  color: hsl(300, 43%, 22%);
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
+@media screen and (max-width: 375px) {
+  .heading {
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: -1.4px;
+  }
+}
+
+.heading-text {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  max-width: 445px;
+  color: hsl(303, 10%, 53%);
+  line-height: 25px;
+}
+
+.ratings-box {
+  /* width: 540px; */
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 540px;
+}
+
+@media screen and (max-width: 375px) {
+  .ratings-box {
+    flex: 0 0 auto;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32.5px;
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 445px;
+  color: hsl(300, 43%, 22%);
+  background-color: #f7f2f7;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 8.5px;
+}
+
+@media screen and (max-width: 375px) {
+  .rating {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-left: auto;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    width: 327px;
+  }
+}
+
+.rating-1 {
+  margin-bottom: 16px;
+}
+
+.rating-2 {
+  margin-bottom: 16px;
+  transform: translateX(48px);
+}
+
+@media screen and (max-width: 375px) {
+  .rating-2 {
+    transform: translateX(0);
+  }
+}
+
+.rating-3 {
+  transform: translateX(95px);
+}
+
+@media screen and (max-width: 375px) {
+  .rating-3 {
+    transform: translateX(0);
+  }
+}
+
+.section-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .section-bottom {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.details-box {
+  display: flex;
+}
+
+.review {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  width: 350px;
+  padding: 32px 40px 32px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .review {
+    max-width: 327px;
+    gap: 24px;
+  }
+}
+
+.review-2 {
+  transform: translateY(16px);
+}
+
+@media screen and (max-width: 375px) {
+  .review-2 {
+    transform: translateY(0);
+  }
+}
+
+.review-3 {
+  transform: translateY(32px);
+}
+
+@media screen and (max-width: 375px) {
+  .review-3 {
+    transform: translateY(0);
+  }
+}
+
+.review-photo {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.reviewer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: right;
+  font-size: 17px;
+}
+
+.details-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .details-box {
+    gap: 23px;
+  }
+}
+
+.name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.buyer {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.blockquote {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+}
